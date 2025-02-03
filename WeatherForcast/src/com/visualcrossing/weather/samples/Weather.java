@@ -30,13 +30,13 @@ public class Weather {
 
     public static void timelineRequestHttpClient() throws Exception {
         //set up the end point
-        String apiEndPoint="https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
+        String apiEndPoint="";
         String location="London,UK";
         String startDate=null;
         String endDate=null;
 
         String unitGroup="metric";
-        String apiKey="EAG4YD6U5MJ2X9YJ5ACFZPHK8";
+        String apiKey="";
 
         StringBuilder requestBuilder=new StringBuilder(apiEndPoint);
         requestBuilder.append(URLEncoder.encode(location, StandardCharsets.UTF_8.toString()));
